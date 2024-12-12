@@ -7,10 +7,17 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "more-itertools" },
+    { name = "pydf" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "more-itertools", specifier = ">=10.5.0" }]
+requires-dist = [
+    { name = "more-itertools", specifier = ">=10.5.0" },
+    { name = "pydf", specifier = ">=12" },
+]
+
+[package.metadata.requires-dev]
+dev = []
 
 [[package]]
 name = "more-itertools"
@@ -20,3 +27,9 @@ sdist = { url = "https://files.pythonhosted.org/packages/51/78/65922308c4248e0eb
 wheels = [
     { url = "https://files.pythonhosted.org/packages/48/7e/3a64597054a70f7c86eb0a7d4fc315b8c1ab932f64883a297bdffeb5f967/more_itertools-10.5.0-py3-none-any.whl", hash = "sha256:037b0d3203ce90cca8ab1defbbdac29d5f993fc20131f3664dc8d6acfa872aef", size = 60952 },
 ]
+
+[[package]]
+name = "pydf"
+version = "12"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c7/27/8174d7338be329ea3aabb185a3a19860ea97b8e223b78b21511df529e0fe/pydf-12.tar.gz", hash = "sha256:7f47a7c3abfceb1ac04fc009ded538df1ae449c31203962a1471a4eb3bf21439", size = 13537 }
